@@ -220,13 +220,16 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.logo-img {
+.logo-img,
+.logo-icon {
     height: 32px;
     width: auto;
     transition: transform 0.3s var(--ease);
+    margin-right: 10px;
 }
 
-.logo:hover .logo-img {
+.logo:hover .logo-img,
+.logo:hover .logo-icon {
     transform: scale(1.05);
 }
 
