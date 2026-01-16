@@ -1,6 +1,6 @@
 // ================================
-// The Mitzvah Studio
-// Custom Bar & Bat Mitzvah Merch
+// Member Threads
+// Custom Apparel for Communities
 // ================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFAQ();
     initScrollReveal();
     initParallaxShapes();
+    initPortfolioFilters();
 });
 
 // ================================
@@ -126,8 +127,6 @@ function initScrollReveal() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optionally unobserve after revealing
-                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -163,54 +162,36 @@ function initParallaxShapes() {
 }
 
 // ================================
-// Cursor Trail Effect (Optional - disabled by default)
+// Portfolio Filter (Work Page)
 // ================================
-function initCursorTrail() {
-    const trail = [];
-    const trailLength = 10;
+function initPortfolioFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-    for (let i = 0; i < trailLength; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'cursor-trail';
-        dot.style.cssText = `
-            position: fixed;
-            width: ${10 - i}px;
-            height: ${10 - i}px;
-            background: linear-gradient(135deg, #2563EB, #EC4899);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: ${1 - (i / trailLength)};
-            transition: transform 0.1s ease;
-        `;
-        document.body.appendChild(dot);
-        trail.push(dot);
-    }
+    if (!filterBtns.length || !portfolioItems.length) return;
 
-    let mouseX = 0, mouseY = 0;
-    const positions = [];
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
+            const filter = btn.getAttribute('data-filter');
 
-    function animate() {
-        positions.unshift({ x: mouseX, y: mouseY });
-        if (positions.length > trailLength) positions.pop();
+            // Filter items
+            portfolioItems.forEach(item => {
+                const category = item.getAttribute('data-category');
 
-        trail.forEach((dot, index) => {
-            const pos = positions[index] || positions[positions.length - 1];
-            if (pos) {
-                dot.style.left = pos.x + 'px';
-                dot.style.top = pos.y + 'px';
-            }
+                if (filter === 'all' || category === filter) {
+                    item.style.display = '';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
         });
-
-        requestAnimationFrame(animate);
-    }
-
-    animate();
+    });
 }
 
 // ================================
@@ -270,21 +251,3 @@ document.querySelectorAll('.nav-cta, .btn-primary').forEach(button => {
         this.style.transform = '';
     });
 });
-
-// ================================
-// Typing Effect for Hero (Optional)
-// ================================
-function typeWriter(element, text, speed = 50) {
-    let i = 0;
-    element.innerHTML = '';
-
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-
-    type();
-}
