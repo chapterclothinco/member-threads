@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Mitzvah Studio | Custom Bar & Bat Mitzvah Apparel</title>
     <meta name="description" content="Custom hoodies, tees, hats, and party merch for Bar and Bat Mitzvahs. Make your celebration iconic with personalized swag your guests will love.">
+    <link rel="icon" type="image/svg+xml" href="assets/Submark.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Floating Background Elements -->
+    <div class="floating-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="/" class="logo">The Mitzvah Studio</a>
+            <a href="/" class="logo">
+                <img src="assets/Logo.svg" alt="The Mitzvah Studio" class="logo-img">
+            </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -27,7 +39,12 @@
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">Start Your Order</a>
+            <a href="#contact" class="nav-cta">
+                <span>Start Your Order</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </nav>
 
@@ -47,35 +64,97 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <span class="pre-headline">BAR & BAT MITZVAH MERCH</span>
-                <h1 class="hero-title">Mitzvah Merch That Actually <span class="gradient-text">Slaps</span></h1>
-                <p class="hero-subtitle">Hoodies, tees, hats, and more — custom apparel your guests will actually want to wear. Make your Bar or Bat Mitzvah iconic.</p>
-                <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary">Start Your Order</a>
-                    <a href="#process" class="btn btn-secondary">See How It Works</a>
+                <span class="pre-headline animate-in">
+                    <span class="sparkle">&#10022;</span>
+                    BAR & BAT MITZVAH MERCH
+                    <span class="sparkle">&#10022;</span>
+                </span>
+                <h1 class="hero-title animate-in delay-1">
+                    Mitzvah Merch That Actually <span class="gradient-text animated-gradient">Slaps</span>
+                </h1>
+                <p class="hero-subtitle animate-in delay-2">Hoodies, tees, hats, and more — custom apparel your guests will actually want to wear. Make your Bar or Bat Mitzvah iconic.</p>
+                <div class="hero-ctas animate-in delay-3">
+                    <a href="#contact" class="btn btn-primary btn-glow">
+                        <span>Start Your Order</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#process" class="btn btn-secondary">
+                        <span>See How It Works</span>
+                    </a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-image-placeholder">
-                    <!-- Replace with actual product image -->
-                    <div class="placeholder-box">
-                        <span>Your merch photo here</span>
+            <div class="hero-visual animate-in delay-2">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <div class="placeholder-box">
+                            <img src="assets/Submark.svg" alt="" class="placeholder-logo">
+                            <span>Your merch photo here</span>
+                        </div>
+                    </div>
+                    <!-- Floating badges -->
+                    <div class="floating-badge badge-1">
+                        <span class="badge-emoji">&#127881;</span>
+                        <span>Party Ready</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="badge-emoji">&#128293;</span>
+                        <span>Fire Merch</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span class="badge-emoji">&#11088;</span>
+                        <span>Custom Design</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="hero-bg-gradient"></div>
+        <div class="hero-bg-gradient-2"></div>
     </section>
+
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Hoodies</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Tees</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Tanks</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Hats</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Bags</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Swag</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Hoodies</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Tees</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Tanks</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Hats</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Bags</span>
+                <span class="marquee-dot">&#10022;</span>
+                <span>Swag</span>
+                <span class="marquee-dot">&#10022;</span>
+            </div>
+        </div>
+    </div>
 
     <!-- What We Make Section -->
     <section id="shop" class="products">
         <div class="container">
-            <div class="section-header">
-                <h2>Everything You Need for an Epic Mitzvah</h2>
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">What We Make</span>
+                <h2>Everything You Need for an <span class="gradient-text">Epic Mitzvah</span></h2>
                 <p class="section-subtitle">From guest giveaways to dancer crew fits, we've got your party covered.</p>
             </div>
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card scroll-reveal" data-delay="0">
                     <div class="product-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M4 6h16M4 6v12a2 2 0 002 2h12a2 2 0 002-2V6M4 6l2-4h12l2 4"/>
@@ -90,7 +169,7 @@
                     </ul>
                     <p class="perfect-for">Perfect for: Party favors, dance crews, family</p>
                 </div>
-                <div class="product-card">
+                <div class="product-card scroll-reveal" data-delay="1">
                     <div class="product-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M6 3h12l2 4v14a1 1 0 01-1 1H5a1 1 0 01-1-1V7l2-4z"/>
@@ -105,7 +184,7 @@
                     </ul>
                     <p class="perfect-for">Perfect for: Guest giveaways, event staff, photo ops</p>
                 </div>
-                <div class="product-card">
+                <div class="product-card scroll-reveal" data-delay="2">
                     <div class="product-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M3 14h18v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4z"/>
@@ -121,7 +200,7 @@
                     </ul>
                     <p class="perfect-for">Perfect for: Swag bags, party favors</p>
                 </div>
-                <div class="product-card">
+                <div class="product-card scroll-reveal" data-delay="3">
                     <div class="product-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -137,7 +216,7 @@
                     </ul>
                     <p class="perfect-for">Perfect for: Welcome bags, guest gifts</p>
                 </div>
-                <div class="product-card">
+                <div class="product-card scroll-reveal" data-delay="4">
                     <div class="product-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
@@ -152,37 +231,57 @@
                     <p class="perfect-for">Perfect for: Swag table extras</p>
                 </div>
             </div>
-            <p class="products-footer">Don't see what you need? We can probably make it. <a href="#contact">Let's talk.</a></p>
+            <p class="products-footer scroll-reveal">Don't see what you need? We can probably make it. <a href="#contact">Let's talk.</a></p>
         </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="process" class="process">
         <div class="container">
-            <div class="section-header">
-                <h2>From Idea to Party in 3 Easy Steps</h2>
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">How It Works</span>
+                <h2>From Idea to Party in <span class="gradient-text">3 Easy Steps</span></h2>
             </div>
             <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
+                <div class="step scroll-reveal" data-delay="0">
+                    <div class="step-number"><span>1</span></div>
                     <h3>Tell Us Your Vision</h3>
                     <p>Share your theme, colors, logo, or vibe. Have a Pinterest board? Send it over. No idea yet? We can help.</p>
                 </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">2</div>
+                <div class="step-connector scroll-reveal" data-delay="1">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0 10 Q 50 10 100 10" stroke="url(#connector-gradient)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                        <defs>
+                            <linearGradient id="connector-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#2563EB"/>
+                                <stop offset="100%" style="stop-color:#EC4899"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="step scroll-reveal" data-delay="2">
+                    <div class="step-number"><span>2</span></div>
                     <h3>We Design, You Approve</h3>
                     <p>Our team creates custom mockups for your review. Tweak until it's perfect — we're not done until you love it.</p>
                 </div>
-                <div class="step-connector"></div>
-                <div class="step">
-                    <div class="step-number">3</div>
+                <div class="step-connector scroll-reveal" data-delay="3">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0 10 Q 50 10 100 10" stroke="url(#connector-gradient)" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                <div class="step scroll-reveal" data-delay="4">
+                    <div class="step-number"><span>3</span></div>
                     <h3>We Print & Ship</h3>
                     <p>Quality printing, fast turnaround. Delivered to your door (or venue) ready to party.</p>
                 </div>
             </div>
-            <div class="process-footer">
-                <a href="#contact" class="btn btn-primary">Get Started</a>
+            <div class="process-footer scroll-reveal">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span>Get Started</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
                 <p class="timeline-note">Most orders ship in 2-3 weeks. Rush options available for last-minute planners.</p>
             </div>
         </div>
@@ -191,11 +290,12 @@
     <!-- Inspiration Section -->
     <section id="inspo" class="inspiration">
         <div class="container">
-            <div class="section-header">
-                <h2>Mitzvah Inspo</h2>
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Inspo</span>
+                <h2>Mitzvah <span class="gradient-text">Inspo</span></h2>
                 <p class="section-subtitle">Real parties. Real merch. Real fire.</p>
             </div>
-            <div class="inspo-categories">
+            <div class="inspo-categories scroll-reveal">
                 <span class="inspo-tag">Sports Themes</span>
                 <span class="inspo-tag">Neon/Glow Party</span>
                 <span class="inspo-tag">Travel/Destination</span>
@@ -205,35 +305,55 @@
                 <span class="inspo-tag">Custom Logos</span>
             </div>
             <div class="inspo-gallery">
-                <div class="inspo-item inspo-item--large">
+                <div class="inspo-item inspo-item--large scroll-reveal" data-delay="0">
                     <div class="inspo-placeholder">
                         <span>Sports theme merch</span>
                     </div>
+                    <div class="inspo-overlay">
+                        <span class="inspo-label">Sports Theme</span>
+                    </div>
                 </div>
-                <div class="inspo-item">
+                <div class="inspo-item scroll-reveal" data-delay="1">
                     <div class="inspo-placeholder">
                         <span>Neon party gear</span>
                     </div>
+                    <div class="inspo-overlay">
+                        <span class="inspo-label">Neon Party</span>
+                    </div>
                 </div>
-                <div class="inspo-item">
+                <div class="inspo-item scroll-reveal" data-delay="2">
                     <div class="inspo-placeholder">
                         <span>Custom logos</span>
                     </div>
+                    <div class="inspo-overlay">
+                        <span class="inspo-label">Custom Logo</span>
+                    </div>
                 </div>
-                <div class="inspo-item">
+                <div class="inspo-item scroll-reveal" data-delay="3">
                     <div class="inspo-placeholder">
                         <span>Gaming theme</span>
                     </div>
+                    <div class="inspo-overlay">
+                        <span class="inspo-label">Gaming</span>
+                    </div>
                 </div>
-                <div class="inspo-item inspo-item--large">
+                <div class="inspo-item inspo-item--large scroll-reveal" data-delay="4">
                     <div class="inspo-placeholder">
                         <span>Music/Concert vibes</span>
                     </div>
+                    <div class="inspo-overlay">
+                        <span class="inspo-label">Concert Vibes</span>
+                    </div>
                 </div>
             </div>
-            <div class="inspo-cta">
+            <div class="inspo-cta scroll-reveal">
                 <p>Have a vision? Let's make it real.</p>
-                <a href="#contact" class="btn btn-primary">Contact Us</a>
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span>Contact Us</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -241,11 +361,12 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <div class="section-header">
-                <h2>Got Questions?</h2>
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">FAQ</span>
+                <h2>Got <span class="gradient-text">Questions?</span></h2>
             </div>
             <div class="faq-list">
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="0">
                     <button class="faq-question">
                         <span>What's the minimum order?</span>
                         <span class="faq-icon"></span>
@@ -254,7 +375,7 @@
                         <p>Most items start at 12 pieces per design. Doing a smaller party? Reach out — we might be able to help.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="1">
                     <button class="faq-question">
                         <span>How long does it take?</span>
                         <span class="faq-icon"></span>
@@ -263,7 +384,7 @@
                         <p>Standard orders ship in 2-3 weeks. Need it faster? Rush production (1-2 weeks) is available for an additional fee.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="2">
                     <button class="faq-question">
                         <span>Can you match our theme/colors?</span>
                         <span class="faq-icon"></span>
@@ -272,7 +393,7 @@
                         <p>Absolutely. Send us your color palette, mood board, or inspo pics and we'll match it. We work with Pantone colors for exact matching.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="3">
                     <button class="faq-question">
                         <span>Do you design the graphics or do we provide them?</span>
                         <span class="faq-icon"></span>
@@ -281,7 +402,7 @@
                         <p>Both! You can send us your logo or artwork, or our design team can create something custom based on your theme.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="4">
                     <button class="faq-question">
                         <span>What if we need to change sizes after ordering?</span>
                         <span class="faq-icon"></span>
@@ -290,7 +411,7 @@
                         <p>We get it — teens grow. Contact us ASAP and we'll do our best to accommodate changes before production starts.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="5">
                     <button class="faq-question">
                         <span>Do you ship to venues?</span>
                         <span class="faq-icon"></span>
@@ -299,7 +420,7 @@
                         <p>Yes! We can ship directly to your event venue, your home, or split shipments however you need.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item scroll-reveal" data-delay="6">
                     <button class="faq-question">
                         <span>What's the quality like?</span>
                         <span class="faq-icon"></span>
@@ -315,11 +436,12 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Ready to Make Your Mitzvah <span class="gradient-text">Iconic?</span></h2>
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Get Started</span>
+                <h2>Ready to Make Your Mitzvah <span class="gradient-text animated-gradient">Iconic?</span></h2>
                 <p class="section-subtitle">Let's create custom swag your guests will actually want.</p>
             </div>
-            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form class="contact-form scroll-reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name *</label>
@@ -397,7 +519,12 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary btn-submit">Start Your Order</button>
+                <button type="submit" class="btn btn-primary btn-glow btn-submit">
+                    <span>Start Your Order</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
                 <p class="form-note">or email us at <a href="mailto:hello@themitzvahstudio.com">hello@themitzvahstudio.com</a></p>
             </form>
         </div>
@@ -408,7 +535,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="/" class="logo">The Mitzvah Studio</a>
+                    <a href="/" class="footer-logo">
+                        <img src="assets/Logo.svg" alt="The Mitzvah Studio" class="footer-logo-img">
+                    </a>
                     <p class="tagline">Custom Bar & Bat Mitzvah merch that hits different.</p>
                 </div>
                 <nav class="footer-nav">
@@ -430,15 +559,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <!-- Session storage redirect handler for GitHub Pages SPA -->
-    <script>
-        (function(){
-            var redirect = sessionStorage.redirect;
-            delete sessionStorage.redirect;
-            if (redirect && redirect !== location.href) {
-                history.replaceState(null, null, redirect);
-            }
-        })();
-    </script>
 </body>
 </html>
